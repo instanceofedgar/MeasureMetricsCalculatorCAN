@@ -12,19 +12,17 @@ Th calculation take into account:
 - **utility cost escalation**: utility rates for electricity and natural gas are adjusted for given inflation rates
 - **electricity grid decarbonization**: electricity carbon savings are calculated based on projections from ECCC data directory
 
-### Project Structure
-
 The repository consists of two primary files:
 
 **measure_metrics_CAN.ipynb**: this Jupyter Notebook is used to define inputs and call the methods to calculate the metrics
 **measure_metrics_CAN.py**: this Python script contains all the methods necessary for performing the calculations
 
-### Reference Data
+### REFERENCE DATA
 
 The project uses three CSV files located in the `reference_data` folder to provide region-specific data:
-**canada_carbon_tax.csv**: contains the projected carbon tax rates in Canada.
-**elec_grid_kgCO2_per_kWh.csv**: contains electricity grid decarbonization projections by province and year (kg CO₂/kWh)
-**natural_gas_kgCO2_per_kWh.csv**: contains carbon intensity values for natural gas consumption by province (kg CO₂/kWh) 
+- **canada_carbon_tax.csv**: contains the projected carbon tax rates in Canada.
+- **elec_grid_kgCO2_per_kWh.csv**: contains electricity grid decarbonization projections by province and year (kg CO₂/kWh)
+- **natural_gas_kgCO2_per_kWh.csv**: contains carbon intensity values for natural gas consumption by province (kg CO₂/kWh) 
 
 ### INPUTS
 
@@ -47,7 +45,7 @@ Calculates various metrics for a given measure including:'
 - Incremental ROI
 - Incremental MAC
 
-### How to Use
+### HOW TO USE
 
 - open **measure_metrics_CAN.ipynb**
 - define all the inputs and run the cell 
