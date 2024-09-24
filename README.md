@@ -34,12 +34,18 @@ The project uses three CSV files located in the `reference_data` folder to provi
 
 3. **Measure Inputs**: These inputs define the specifics of the energy efficiency measure, including costs, expected savings in energy (electricity and natural gas), the implementation year, and the measure life (in years).
 
-4. **Calculations**: The `calculate_measure_metrics` function performs the following:
-   - Computes average annual carbon savings based on energy savings and decarbonization projections.
-   - Estimates annual cost savings, including the impact of an escalating carbon tax.
-   - Calculates the Net Present Value (NPV) and Return on Investment (ROI) based on cost and savings projections.
-   - Determines the Marginal Abatement Cost (MAC), representing the cost per ton of CO₂ saved.
-   - Evaluates the emissions intensity reduction over the life of the measure.
+### OUTPUTS
+
+Calculates various metrics for a given measure including:'
+- Average Emissions Intensity Reduction (kgCO₂e/ft²)
+- Average Annual Electricity Carbon Savings (tCO₂e)
+- Average Annual Natural Gas Carbon Savings (tCO₂e)
+- Average Annual Carbon Tax Savings
+- Average Annual Electricity Cost Savings
+- Average Annual Natural Gas Cost Savings
+- Incremental NPV
+- Incremental ROI
+- Incremental MAC
 
 ### How to Use
 
