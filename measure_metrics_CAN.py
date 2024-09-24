@@ -209,32 +209,6 @@ def calculate_incremental_npv(
    
     return round(npv, 2)
 
-###################
-# def calculate_measure_metrics(
-#         # general inputs
-#         present_year: int,
-#         region: Region,
-#         gross_floor_area: float,
-#         gross_floor_area_unit: Units,
-#         electricity_kWh_rate: float,
-#         natural_gas_kWh_rate: float,
-#         utility_rate_reference_year: int,
-        
-#         # financial scalars
-#         discount_rate: float,
-#         consumer_price_index: float,
-#         electricity_inflation: float,
-#         natural_gas_inflation: float,
-        
-#         # measure inputs
-#         like_for_like_cost: float,
-#         measure_cost: float,
-#         implementation_year: int,
-#         measure_life: int,
-#         electricity_kWh_savings: float,
-#         natural_gas_kWh_savings: float
-#     ):
-
 def calculate_average_carbon_savings(
         region: Region,
         electricity_kWh_savings: float,
@@ -272,7 +246,7 @@ def calculate_average_carbon_savings(
     
     return average_electricity_carbon_savings, average_natural_gas_carbon_savings
 
-## __main__ **
+## __main__ ##
 def calculate_measure_metrics(
         # general inputs
         present_year: int,
